@@ -1,8 +1,15 @@
-# React + Vite
+> Why do I have a folder named ".expo" in my project?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The ".expo" folder is created when an Expo project is started using "expo start" command.
 
-Currently, two official plugins are available:
+> What do the files contain?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- "devices.json": contains information about devices that have recently opened this project. This is used to populate the "Development sessions" list in your development builds.
+- "packager-info.json": contains port numbers and process PIDs that are used to serve the application to the mobile device/simulator.
+- "settings.json": contains the server configuration that is used to serve the application manifest.
+
+> Should I commit the ".expo" folder?
+
+No, you should not share the ".expo" folder. It does not contain any information that is relevant for other developers working on the project, it is specific to your machine.
+
+Upon project creation, the ".expo" folder is already added to your ".gitignore" file.
